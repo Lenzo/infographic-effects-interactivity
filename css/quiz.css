@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.margin-auto {
+	margin: auto;
+	display: block;
+}
+
+.box {
+	background-color: #e0eaf7;
+	padding: 1rem;
+	width: 35rem;
+	margin: 2rem;
+}
+
+.question {
+	color: #000;
+}
+
+.answer {
+	display: inline-block;
+	background-color: #4a5ba8;
+	padding: .5rem;
+	margin: .5rem;
+	color: #fff;
+}
