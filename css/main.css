@@ -32,6 +32,12 @@ body {
 	background-color: #e0eaf7;
 	padding: 1rem;
 	width: 100%;	
+	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.20);
+	transition: linear all 1s;
+}
+
+.box:hover {
+	box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.20);
 }
 
 h3 {
@@ -53,6 +59,11 @@ h3 {
 	padding: .5rem;
 	margin: .5rem;
 	color: #fff;
+	cursor: pointer;
+}
+
+.answer:hover {
+	background-color: #EBB5D4;
 }
 
 .hide-div {
