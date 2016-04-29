@@ -1,10 +1,12 @@
-var trueCount = 0;
-var falseCount = 0;
+
 
 $(document).ready(function(){
+
+	var nextQuestionDivId
+
 	$("input").on("click", function() {
 		$(this).closest("div").hide();
-	    var nextQuestionDivId = '#' + ($(this).closest("div")).next("div").attr("id");
+	    nextQuestionDivId = '#' + ($(this).closest("div")).next("div").attr("id");
         $(nextQuestionDivId).removeClass("hide-div");
 		countBrainType(($(this).closest("div")).next("div").attr("id"), $(this).attr("value"));
 	});
@@ -12,6 +14,10 @@ $(document).ready(function(){
 
 //calculate the score 
 function countBrainType(elementID,buttonValue) {
+
+	var trueCount = 0;
+	var falseCount = 0;
+
   if (buttonValue === "true") {
     trueCount++;
   } else {

@@ -31,11 +31,15 @@ body {
 .box {
 	background-color: #e0eaf7;
 	padding: 1rem;
-	width: 100%;	
+	width: 100%;
+	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+	transition: linear all 1s;
+
+
 }
 
 .box:hover {
-	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 1px 1px 0px rgba(0,0,0,0.75);
 }
 
 h3 {
