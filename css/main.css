@@ -13,79 +13,79 @@ html {
 }
 
 header {
-	background-color: #4a5ba8;
+  background-color: #4a5ba8;
 }
 
 body {
-	margin: 0;
-	background-color: #97c0e6;
-  	font-family: "arvo", sans-serif;
+  margin: 0;
+  background-color: #97c0e6;
+    font-family: "arvo", sans-serif;
 }
 
 .container {
-	margin: 2rem auto;
-	display: block;
-	max-width: 35rem;
+  margin: 2rem auto;
+  display: block;
+  max-width: 35rem;
 }
 
 .box {
-	background-color: #e0eaf7;
-	padding: 1rem;
-	width: 100%;	
-	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.20);
-	transition: linear all 1s;
+  background-color: #e0eaf7;
+  padding: 1rem;
+  width: 100%;  
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.20);
+  transition: linear all 1s;
 }
 
 .box:hover {
-	box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.20);
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 h3 {
-	font-size: 1.5rem;
-	color: #000;
-	    -webkit-text-fill-color: #fff;
-	    -webkit-text-stroke-width: 1px;
-	    -webkit-text-stroke-color: #4a5ba8;
+  font-size: 1.5rem;
+  color: #000;
+      -webkit-text-fill-color: #fff;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #4a5ba8;
 }
 
 .question {
-	color: #000;
-	font-size: 1rem;
+  color: #000;
+  font-size: 1rem;
 }
 
 .answer {
-	display: inline-block;
-	background-color: #4a5ba8;
-	padding: .5rem;
-	margin: .5rem;
-	color: #fff;
-	cursor: pointer;
+  display: inline-block;
+  background-color: #4a5ba8;
+  padding: .5rem;
+  margin: .5rem;
+  color: #fff;
+  cursor: pointer;
 }
 
 .answer:hover {
-	background-color: #EBB5D4;
+  background-color: #EBB5D4;
 }
 
 .hide-div {
-	display:none; 
+  display:none; 
 }
 
 h1 {
-	width: 100%;
+  width: 100%;
 }
 
 footer {
-	background-color: #4a5ba8;
-	height: 6rem;
+  background-color: #4a5ba8;
+  height: 6rem;
 }
 
-footer svg{
-	width: 5rem;
-	display: block;
-	margin: 1rem auto;
+footer svg {
+  width: 5rem;
+  display: block;
+  margin: 1rem auto;
 
-	transform-origin: center center;
-	animation: breath 2s alternate infinite;
+  transform-origin: center center;
+  animation: breath 2s alternate infinite;
 }
 
 @keyframes breath {
@@ -102,26 +102,26 @@ footer svg{
 }
 
 .masthead {
-	position: relative;
-	padding: 1rem;
-	height: 100%;
+  position: relative;
+  padding: 1rem;
+  height: 100%;
 }
 
 h2 {
-	position: absolute;
-	right: 1rem;
-	bottom: 0;
-	margin-top: 1rem;
-	color: white;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  margin-top: 1rem;
+  color: white;
    
 }
 
 @media only screen and (min-width: 45em) {
 
-	h2	{
-		color: #000;
-	    -webkit-text-fill-color: #fff;
-	    -webkit-text-stroke-width: 2px;
-	    -webkit-text-stroke-color: #4a5ba8;
-	}
+  h2 {
+    color: #000;
+      -webkit-text-fill-color: #fff;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #4a5ba8;
+  }
 }
