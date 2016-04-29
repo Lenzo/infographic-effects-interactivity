@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-	var nextQuestionDivId
+	var nextQuestionDivId;
 
 	$("input").on("click", function() {
 		$(this).closest("div").hide();
@@ -15,6 +15,9 @@ $(document).ready(function(){
 //calculate the score 
 function countBrainType(elementID,buttonValue) {
 
+	var resultDivId = '#' + elementID;
+
+
 	var trueCount = 0;
 	var falseCount = 0;
 
@@ -24,7 +27,6 @@ function countBrainType(elementID,buttonValue) {
     falseCount++;
   }
    if (elementID === "demo"){
-	 var resultDivId = '#' + elementID;
 	 if (trueCount === falseCount) {
 	 	$(resultDivId).children("p").text("You are ambidextrous brained");
 	 }
