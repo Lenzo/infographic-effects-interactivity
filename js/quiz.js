@@ -1,30 +1,33 @@
-var $box = $('.box');
-var $question = $('.question');
-var $left = $('.left-answer');
-var $right = $('.right-answer');
+var trueCount = 0;
+var falseCount = 0;
 
-var questions = [
-    'Do you prefer to work with music on',
-    'Do you prefer art over science',
-    'Do you prefer cats over dogs',
-    ''
-];
-
-var s = 0;
-
-$right.on('click', function () {
-	s++;
-	$question.html(questions.next);
+$(document).ready(function(){
+	$("input").on("click", function() {
+		$(this).closest("div").hide();
+	    var nextQuestionDivId = '#' + ($(this).closest("div")).next("div").attr("id");
+        $(nextQuestionDivId).removeClass("hide-div");
+		countBrainType(($(this).closest("div")).next("div").attr("id"), $(this).attr("value"));
+	});
 });
 
-$left.on('click', function () {
-	$question.html(questions.next);
-});
+//calculate the score 
+function countBrainType(elementID,buttonValue) {
+  if (buttonValue === "true") {
+    trueCount++;
+  } else {
+    falseCount++;
+  }
+   if (elementID === "demo"){
+	 var resultDivId = '#' + elementID;
+	 if (trueCount === falseCount) {
+	 	$(resultDivId).children("p").text("You are ambidextrous brained");
+	 }
 
-if s >= 3 {
-	box.remove($question, $left, $right)
-	box.html('<p>You are left brained!<p>');
-} else {
-	box.remove($question, $left, $right)
-	box.html('<p>You are right brained!<p>');
-};
+	 else if (trueCount > falseCount) {
+	      $(resultDivId).children("p").text("You are left brained!");
+	 }
+	 else {
+		 $(resultDivId).children("p").text("You are right brained!");
+	 }
+   }
+}
